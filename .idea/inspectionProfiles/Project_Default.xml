@@ -1,0 +1,30 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="15">
+            <item index="0" class="java.lang.String" itemvalue="name" />
+            <item index="1" class="java.lang.String" itemvalue="view" />
+            <item index="2" class="java.lang.String" itemvalue="flat" />
+            <item index="3" class="java.lang.String" itemvalue="no-border" />
+            <item index="4" class="java.lang.String" itemvalue="link" />
+            <item index="5" class="java.lang.String" itemvalue="inset-delimiter" />
+            <item index="6" class="java.lang.String" itemvalue="color" />
+            <item index="7" class="java.lang.String" itemvalue="push" />
+            <item index="8" class="java.lang.String" itemvalue="icon" />
+            <item index="9" class="java.lang.String" itemvalue="icon-right" />
+            <item index="10" class="java.lang.String" itemvalue="label" />
+            <item index="11" class="java.lang.String" itemvalue="sublabel" />
+            <item index="12" class="java.lang.String" itemvalue="to" />
+            <item index="13" class="java.lang.String" itemvalue="default" />
+            <item index="14" class="java.lang.String" itemvalue="direction" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="Stylelint" enabled="true" level="ERROR" enabled_by_default="true" />
+  </profile>
+</component>
