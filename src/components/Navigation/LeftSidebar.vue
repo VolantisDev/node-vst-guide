@@ -10,39 +10,19 @@
       <q-list-header>Your Library</q-list-header>
       <q-side-link item to="/library/instruments" >
         <q-item-side icon="music note" ></q-item-side>
-        <q-item-main label="Instruments" sublabel="Plugins, Kontakt instruments, etc..." ></q-item-main>
+        <q-item-main label="Instruments" ></q-item-main>
       </q-side-link>
       <q-side-link item to="/library/effects" >
         <q-item-side icon="graphic eq" ></q-item-side>
-        <q-item-main label="Effects" sublabel="Plugins, Reaktor effects, etc..." ></q-item-main>
-      </q-side-link>
-      <q-side-link item to="/library/presets" >
-        <q-item-side icon="radio" ></q-item-side>
-        <q-item-main label="Presets" sublabel="Instrument and effect presets..." ></q-item-main>
+        <q-item-main label="Effects" ></q-item-main>
       </q-side-link>
       <q-side-link item to="/library/samples" >
         <q-item-side icon="album" ></q-item-side>
-        <q-item-main label="Samples" sublabel="Audio files..." ></q-item-main>
+        <q-item-main label="Samples" ></q-item-main>
       </q-side-link>
-    </q-list>
-
-    <q-list no-border link inset-delimiter>
-      <q-list-header>Database</q-list-header>
-      <q-side-link item to="/database/instruments" >
-        <q-item-side icon="music note" ></q-item-side>
-        <q-item-main label="Instruments" sublabel="Plugins, Kontakt instruments, etc..." ></q-item-main>
-      </q-side-link>
-      <q-side-link item to="/database/effects" >
-        <q-item-side icon="graphic eq" ></q-item-side>
-        <q-item-main label="Effects" sublabel="Plugins, Reaktor effects, etc..." ></q-item-main>
-      </q-side-link>
-      <q-side-link item to="/database/presets" >
-        <q-item-side icon="radio" ></q-item-side>
-        <q-item-main label="Presets" sublabel="Instrument and effect presets..." ></q-item-main>
-      </q-side-link>
-      <q-side-link item to="/database/samples" >
-        <q-item-side icon="album" ></q-item-side>
-        <q-item-main label="Samples" sublabel="Audio files..." ></q-item-main>
+      <q-side-link item to="/library/manage" >
+        <q-item-side icon="dvr" ></q-item-side>
+        <q-item-main label="Manage Library" ></q-item-main>
       </q-side-link>
     </q-list>
 
