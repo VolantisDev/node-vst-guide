@@ -104,5 +104,7 @@ module.exports = {
   ],
   performance: {
     hints: false
-  }
+  },
+  // Added to resolve errors related to 'fs' module
+  target: 'node'
 }

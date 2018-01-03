@@ -3,6 +3,10 @@
   <div>
     <!-- Add listing here -->
 
+    <q-data-table :data="tableData" :config="tableConfig" :columns="tableColumns" @refresh="refresh">
+
+    </q-data-table>
+
     <q-fab
       color="primary"
       class="fixed"
@@ -18,18 +22,56 @@
 <script>
   import {
     QFab,
-    QFabAction
+    QFabAction,
+    QDataTable
   } from 'quasar'
+  import vstGuideLibrary from 'vst-guide-library'
 
   export default {
     name: 'Index',
     components: {
       QFab,
-      QFabAction
+      QFabAction,
+      QDataTable
+    },
+    data () {
+      return {
+        tableConfig: {
+          rowHeight: '50px',
+          title: 'Instruments',
+          refresh: true,
+          columnPicker: true,
+          responsive: true,
+          messages: {
+            noData: '<i>warning</i> No instruments found in your library.',
+            noDataAfterFiltering: '<i>warning</i> No instruments found matching your filter.'
+          }
+        },
+        tableColumns: [
+          {
+            label: 'Name',
+            field: 'name',
+            width: '200px',
+            filter: true,
+            sort: true,
+            type: 'string'
+          }
+        ],
+        tableData: []
+      }
     },
     methods: {
       scan: function (event) {
-        // @todo Scan plugins, Kontakt, and Reaktor
+        // @todo Scan for updates to instruments
+      },
+      loadTableData: function () {
+        vstGuideLibrary.collections.instrumentCollection.all()
+          .then(function (instruments) {
+            this.tableData = instruments.items
+          })
+      },
+      mounted: function () {
+        this.loadTableData()
       }
     }
   }

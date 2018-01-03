@@ -24,7 +24,7 @@ module.exports = {
 
     // Remove unused CSS
     // Disable it if it has side-effects for your specific app
-    purifyCSS: true
+    purifyCSS: true,
   },
   dev: {
     env: require('./dev.env'),
@@ -44,7 +44,7 @@ module.exports = {
     // Proxy your API if using any.
     // Also see /build/script.dev.js and search for "proxy api requests"
     // https://github.com/chimurai/http-proxy-middleware
-    proxyTable: {}
+    proxyTable: {},
   }
 }
 
