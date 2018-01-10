@@ -25,7 +25,7 @@
     QFabAction,
     QDataTable
   } from 'quasar'
-  import vstGuideLibrary from 'vst-guide-library'
+  // import vstGuideLibrary from 'vst-guide-library'
 
   export default {
     name: 'Index',
@@ -65,13 +65,13 @@
         // @todo Scan for updates to instruments
       },
       loadTableData: function () {
-        vstGuideLibrary.collections.instrumentCollection.all()
-          .then(function (instruments) {
-            this.tableData = instruments.items
-          })
+        // vstGuideLibrary.collections.instrumentCollection.all()
+        //   .then(function (instruments) {
+        //     this.tableData = instruments.items
+        //   })
       },
       mounted: function () {
-        this.loadTableData()
+        // this.loadTableData()
       }
     }
   }

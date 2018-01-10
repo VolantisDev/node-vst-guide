@@ -53,31 +53,6 @@ export default new VueRouter({
               component: load('Library/Samples')
             }
           ]
-        },
-        {
-          path: 'database',
-          components: {
-            page: load('Database/Index'),
-            tabs: load('Navigation/DatabaseTabs')
-          },
-          children: [
-            {
-              path: 'instruments',
-              component: load('Database/Instruments')
-            },
-            {
-              path: 'effects',
-              component: load('Database/Effects')
-            },
-            {
-              path: 'presets',
-              component: load('Database/Presets')
-            },
-            {
-              path: 'samples',
-              component: load('Database/Samples')
-            }
-          ]
         }
       ]
     },

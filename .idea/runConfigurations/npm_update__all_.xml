@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="npm update (all)" type="js.build_tools.npm" factoryName="npm">
+    <package-json value="$PROJECT_DIR$/electron/package.json" />
+    <command value="update" />
+    <node-interpreter value="project" />
+    <envs />
+    <method>
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="npm update" run_configuration_type="js.build_tools.npm" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="npm update (gulp)" run_configuration_type="js.build_tools.npm" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="quasar dev (electron)" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <node-interpreter>project</node-interpreter>
+    <node-options />
+    <gulpfile>$PROJECT_DIR$/gulp/gulpfile.babel.js</gulpfile>
+    <tasks>
+      <task>electron:dev</task>
+    </tasks>
+    <arguments />
+    <envs />
+    <method />
+  </configuration>
+</component>

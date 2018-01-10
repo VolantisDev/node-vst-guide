@@ -104,7 +104,12 @@ module.exports = {
   ],
   performance: {
     hints: false
-  },
-  // Added to resolve errors related to 'fs' module
-  target: 'node'
+  }
+
+  // To resolve errors related to 'fs' module
+  // target: 'electron'
+  // To resolve errors with saving files in WebStorm while watching with webpack
+  // watchOptions: {
+  //   poll: 1000
+  // }
 }
