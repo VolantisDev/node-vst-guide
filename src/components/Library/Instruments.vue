@@ -25,7 +25,7 @@
     QFabAction,
     QDataTable
   } from 'quasar'
-  // import vstGuideLibrary from 'vst-guide-library'
+  import { mapGetters, mapActions } from 'vuex'
 
   export default {
     name: 'Index',
@@ -60,20 +60,15 @@
         tableData: []
       }
     },
-    methods: {
-      scan: function (event) {
-        // @todo Scan for updates to instruments
-      },
-      loadTableData: function () {
-        // vstGuideLibrary.collections.instrumentCollection.all()
-        //   .then(function (instruments) {
-        //     this.tableData = instruments.items
-        //   })
-      },
-      mounted: function () {
-        // this.loadTableData()
-      }
-    }
+    computed: mapGetters([
+      'instruments',
+      'activeInstrument',
+      'settings'
+    ]),
+    methods: mapActions([
+      'deleteInstrument',
+      'updateActiveInstrument'
+    ])
   }
 </script>
 

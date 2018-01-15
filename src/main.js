@@ -13,6 +13,7 @@ require(`quasar/dist/quasar.${__THEME}.css`)
 import Vue from 'vue'
 import Quasar, { Ripple, QBtn, QIcon, AddressbarColor } from 'quasar'
 import router from './router'
+import store from './store'
 
 AddressbarColor.set('#a2e3fa')
 Vue.config.productionTip = false
@@ -36,6 +37,7 @@ Quasar.start(() => {
   /* eslint-disable no-new */
   new Vue({
     el: '#q-app',
+    store,
     router,
     render: h => h(require('./App').default)
   })
